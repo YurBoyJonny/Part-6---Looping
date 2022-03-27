@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Part_6___Looping
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+        ///////////////////////////////////////////////////// PROMPTER /////////////////////////////////////////////////////
+        public static void Prompter()
+        {
+
+        }
+        ///////////////////////////////////////////////////// PERCENT PASSING /////////////////////////////////////////////////////
+        public static void PercentPassing()
+        { 
+        
+        }
+        ///////////////////////////////////////////////////// ODD SUM /////////////////////////////////////////////////////
+        public static void OddSum()
+        { 
+
+        }
+        ///////////////////////////////////////////////////// RANDOM NUMBERS /////////////////////////////////////////////////////
+        public static void RandomNumbers()
+        { 
+
+        }
+    }
+}
