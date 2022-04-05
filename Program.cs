@@ -37,7 +37,7 @@ namespace Part_6___Looping
         public static void Prompter()
         {
             Console.WriteLine("---PROMPTER---");
-            Thread.Sleep(700);
+            Thread.Sleep(500);
             Console.WriteLine("Enter a min value");
             int minValue;
             int maxValue;
@@ -79,17 +79,16 @@ namespace Part_6___Looping
         public static void OddSum()
         {
             Console.WriteLine("---ODD SUM---");
-            Console.WriteLine("Enter a number");
-            int numberEntered;
-            while (!Int32.TryParse(Console.ReadLine(), out numberEntered)) ;
-
-            for (int oddNumber = 1; oddNumber < (numberEntered + 1); oddNumber ++)
             {
-                if (oddNumber % 2 != 0)
+                int i, numberEntered, sum = 0;
+                Console.Write("Enter a number: ");
+                Int32.TryParse(Console.ReadLine(), out numberEntered);
+
+                for (i = 1; i <= numberEntered; i += 2)
                 {
-                    Console.WriteLine(oddNumber.ToString());
-                    Thread.Sleep(700);
+                    sum += i;
                 }
+                Console.WriteLine("The sum of all odd numbers between 1 to " + numberEntered + " = " + sum);
             }
         }
         public static void RandomNumbers()
@@ -107,7 +106,8 @@ namespace Part_6___Looping
             for (int i = 1; i <= 25; i++)
             {
                 int numberBetween = generator.Next(minValue, maxValue + 1);
-                Console.WriteLine(numberBetween);
+                Console.WriteLine("Random #" + i + ": " + numberBetween + " ");
+                Thread.Sleep(500);
             }
         }
     }
